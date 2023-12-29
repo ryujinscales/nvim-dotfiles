@@ -1,18 +1,21 @@
 return {
     {
         'neovim/nvim-lspconfig',
-        lazy = false,
+        -- lazy = false,
+        event = 'InsertEnter',
     },
     {
         'williamboman/mason.nvim',
-        lazy = false,
+        -- lazy = false,
+        event = 'InsertEnter',
         config = function()
             require('mason').setup()
         end
     },
     {
         'williamboman/mason-lspconfig.nvim',
-        lazy = false,
+        -- lazy = false,
+        event = 'InsertEnter',
         config = function()
             local servers = {
               clangd = {},
@@ -69,7 +72,8 @@ return {
     },
     {
         'hrsh7th/nvim-cmp',
-        lazy = false,
+        -- lazy = false,
+        event = 'InsertEnter',
         config = function()
             local cmp = require 'cmp'
             local luasnip = require 'luasnip'
@@ -126,26 +130,32 @@ return {
     },
     {
         'L3MON4D3/LuaSnip',
-        lazy = false,
+        -- lazy = false,
+        event = 'InsertEnter',
     },
     {
         'saadparwaiz1/cmp_luasnip',
-        lazy = false,
+        -- lazy = false,
+        event = 'InsertEnter',
     },
     {
         'hrsh7th/cmp-nvim-lsp',
-        lazy = false,
+        -- lazy = false,
+        event = 'InsertEnter',
     },
     {
         'hrsh7th/cmp-path',
-        lazy = false,
+        -- lazy = false,
+        event = 'InsertEnter',
     },
     {
         'rafamadriz/friendly-snippets',
-        lazy = false,
+        -- lazy = false,
+        event = 'InsertEnter',
     },
     {
         'onsails/lspkind.nvim',
-        lazy = false,
+        -- lazy = false,
+        event = 'InsertEnter',
     },
 }
