@@ -8,8 +8,10 @@ return {
             indent = { 
                 char = '│'
             },
-            buftypes = {
-                'terminal', -- Disabled buftypes for indent guides
+            exclude = {
+                buftypes = {
+                    'terminal', -- Disabled buftypes for indent guides
+                },
             },
         })
     end

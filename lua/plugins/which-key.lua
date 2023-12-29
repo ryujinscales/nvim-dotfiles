@@ -3,6 +3,7 @@ return {
     version = '*',
     lazy = false,
     config = function()
+        vim.cmd('set timeoutlen=200')
         local mappings = {
           ["q"] = { "<cmd>wq<CR>", "Save and Quit" },
           -- ["/"] = { "<Plug>(comment_toggle_linewise_current)", "Comment" },
