@@ -13,6 +13,11 @@ return {
                     'terminal', -- Disabled buftypes for indent guides
                 },
             },
+            scope = {
+                enabled = false, -- To not highlight current scope
+                show_start = false,
+                show_end = false,
+            },
         })
     end
 }

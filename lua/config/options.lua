@@ -1,7 +1,8 @@
 local opt = vim.opt
 
 opt.encoding = 'UTF-8'
-opt.mouse:append('a')
+-- opt.mouse:append('a')
+vim.cmd([[set mouse=]])
 opt.number = true
 -- opt.cursorline = true
 opt.relativenumber = true
@@ -21,6 +22,7 @@ opt.scrolloff = 3
 opt.tabstop = 4
 opt.softtabstop = 4
 opt.shiftwidth = 4
+opt.colorcolumn = "80"
 
 vim.cmd([[highlight Comment cterm=italic gui=italic]])
 vim.cmd([[set fillchars=fold:\ ,vert:\│,eob:\ ,msgsep:‾]])
