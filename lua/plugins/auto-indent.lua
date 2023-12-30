@@ -1,5 +1,5 @@
 return {
-    'vidocqh/auto-indent.nvim',
+    'VidocQh/auto-indent.nvim',
     event = 'InsertEnter',
     config = true,
 }
