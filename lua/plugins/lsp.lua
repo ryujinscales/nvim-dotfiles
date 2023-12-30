@@ -36,8 +36,7 @@ return {
                   },
                 },
               },
-              -- tsserver = {},
-              html = { filetypes = { 'html', 'twig', 'hbs'} },
+              -- html = { filetypes = { 'html', 'twig', 'hbs'} },
             
               lua_ls = {
                 Lua = {

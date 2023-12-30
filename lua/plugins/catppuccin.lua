@@ -1,8 +1,8 @@
 return {
     'catppuccin/nvim',
     name = 'catppuccin.nvim',
-    lazy = true,
-    priority = 1000,
+    enabled = false,
+    -- lazy = true,
     config = function()
         vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
         vim.cmd('hi NvimTreeNormal guibg=NONE')

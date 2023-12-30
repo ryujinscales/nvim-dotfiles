@@ -1,7 +1,6 @@
 return {
     'EdenEast/nightfox.nvim',
-    lazy = true,
-    -- priority = 1000,
+    enabled = false,
     config = function()
         -- vim.cmd('colorscheme nightfox')
 	-- vim.cmd('hi Normal guibg=NONE ctermbg=NONE')

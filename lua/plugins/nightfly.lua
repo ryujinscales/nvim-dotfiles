@@ -2,7 +2,7 @@ return {
     'bluz71/vim-nightfly-colors',
     name = 'nightfly',
     lazy = false,
-    priority = 1000,
+    priority = 100000000000000,
     config = function()
 	    vim.cmd('colorscheme nightfly')
 	    -- vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
