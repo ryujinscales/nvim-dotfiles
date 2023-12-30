@@ -6,6 +6,7 @@ return {
     require('toggleterm').setup{
       shell = "powershell",
       direction = 'vertical',
+      -- direction = 'float',
       size = 36,
       autochdir = true,
     }

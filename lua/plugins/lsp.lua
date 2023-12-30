@@ -148,11 +148,11 @@ return {
         -- lazy = false,
         event = 'InsertEnter',
     },
-    {
-        'rafamadriz/friendly-snippets',
-        -- lazy = false,
-        event = 'InsertEnter',
-    },
+    -- {
+    --     'rafamadriz/friendly-snippets',
+    --     -- lazy = false,
+    --     event = 'InsertEnter',
+    -- },
     {
         'onsails/lspkind.nvim',
         -- lazy = false,
