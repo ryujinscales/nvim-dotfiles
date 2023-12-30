@@ -3,6 +3,7 @@ local opt = vim.opt
 opt.encoding = 'UTF-8'
 opt.mouse:append('a')
 opt.number = true
+-- opt.cursorline = true
 opt.relativenumber = true
 opt.autoread = true
 opt.showmatch = true

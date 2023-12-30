@@ -11,6 +11,8 @@ k.set('n', '<Down>', '<NOP>', { noremap = true })
 k.set('n', '<Left>', '<NOP>', { noremap = true })
 k.set('n', '<Right>', '<NOP>', { noremap = true })
 
+k.set('n', '<leader>d', '<cmd>bdelete<cr>', { noremap = true, silent = true })
+
 k.set('n', ';', ':', { noremap = true })
 
 k.set('n', '<leader>t', ':ToggleTerm<CR>', { noremap = true })

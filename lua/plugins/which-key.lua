@@ -3,7 +3,7 @@ return {
     version = '*',
     lazy = false,
     config = function()
-        vim.cmd('set timeoutlen=200')
+        vim.cmd('set timeoutlen=150')
         local mappings = {
           ["q"] = { "<cmd>wq<CR>", "Save and Quit" },
           -- ["/"] = { "<Plug>(comment_toggle_linewise_current)", "Comment" },
@@ -53,6 +53,7 @@ return {
             p = { "<cmd>Lazy profile<cr>", "Profile" },
             l = { "<cmd>Lazy log<cr>", "Log" },
             d = { "<cmd>Lazy debug<cr>", "Debug" },
+            z = { "<cmd>Lazy<cr>", "Lazy"},
           },
 
           -- n = {
