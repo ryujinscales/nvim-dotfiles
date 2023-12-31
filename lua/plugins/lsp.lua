@@ -1,21 +1,24 @@
 return {
     {
         'neovim/nvim-lspconfig',
-        -- lazy = false,
-        event = 'VeryLazy',
+        lazy = false,
+        priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        -- event = 'VeryLazy',
     },
     {
         'williamboman/mason.nvim',
-        -- lazy = false,
-        event = 'VeryLazy',
+        lazy = false,
+        priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        -- event = 'VeryLazy',
         config = function()
             require('mason').setup()
         end
     },
     {
         'williamboman/mason-lspconfig.nvim',
-        -- lazy = false,
-        event = 'VeryLazy',
+        lazy = false,
+        priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        -- event = 'VeryLazy',
         config = function()
             local servers = {
               clangd = {},
@@ -71,8 +74,9 @@ return {
     },
     {
         'hrsh7th/nvim-cmp',
-        -- lazy = false,
-        event = 'VeryLazy',
+        lazy = false,
+        priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        -- event = 'VeryLazy',
         config = function()
             local cmp = require 'cmp'
             local luasnip = require 'luasnip'
@@ -129,32 +133,37 @@ return {
     },
     {
         'L3MON4D3/LuaSnip',
-        -- lazy = false,
-        event = 'VeryLazy',
+        lazy = false,
+        priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        -- event = 'VeryLazy',
     },
     {
         'saadparwaiz1/cmp_luasnip',
-        -- lazy = false,
-        event = 'VeryLazy',
+        lazy = false,
+        priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        -- event = 'VeryLazy',
     },
     {
         'hrsh7th/cmp-nvim-lsp',
-        -- lazy = false,
-        event = 'VeryLazy',
+        lazy = false,
+        priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        -- event = 'VeryLazy',
     },
     {
         'hrsh7th/cmp-path',
-        -- lazy = false,
-        event = 'VeryLazy',
+        lazy = false,
+        priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        -- event = 'VeryLazy',
     },
     -- {
     --     'rafamadriz/friendly-snippets',
-    --     -- lazy = false,
-    --     event = 'VeryLazy',
+    --     lazy = false,
+    --     -- event = 'VeryLazy',
     -- },
     {
         'onsails/lspkind.nvim',
-        -- lazy = false,
-        event = 'VeryLazy',
+        lazy = false,
+        priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        -- event = 'VeryLazy',
     },
 }
