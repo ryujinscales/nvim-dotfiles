@@ -135,7 +135,7 @@ return {
             -- dashboard.button( "<leader> e v", "  󰁔 Settings" , ":e $MYVIMRC <CR>"),
             dashboard.button( "<leader> e v", "  󰁔 Settings" , ":e C:\\Users\\aniru\\AppData\\Local\\nvim\\<CR>"),
             dashboard.button( "<leader> q q", "󰗼  󰁔 Quit NVIM", ":qa <CR>"),
-            -- dashboard.button( "<leader> l g", "  󰁔 Telescope Live Grep", ":Telescope live_grep <CR>"),
+            dashboard.button( "<leader> l g", "  󰁔 Telescope Live Grep", ":Telescope live_grep <CR>"),
         }
         -- dashboard.section.footer.val = {
         --   "",

@@ -4,7 +4,6 @@ opt.encoding = 'UTF-8'
 -- opt.mouse:append('a')
 vim.cmd([[set mouse=]])
 opt.number = true
--- opt.cursorline = true
 opt.relativenumber = true
 opt.autoread = true
 opt.showmatch = true

@@ -3,5 +3,5 @@ return {
     dependencies = {
         "nvim-lua/plenary.nvim",
     },
-    event = 'CmdlineEnter',
+    event = 'VeryLazy',
 }
