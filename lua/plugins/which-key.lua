@@ -5,6 +5,7 @@ return {
     config = function()
         vim.cmd('set timeoutlen=150')
         local mappings = {
+          ["m"] = { ":%g/", "RegEx" },
           ["q"] = { "<cmd>wq<CR>", "Save and Quit" },
           -- ["/"] = { "<Plug>(comment_toggle_linewise_current)", "Comment" },
           ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },

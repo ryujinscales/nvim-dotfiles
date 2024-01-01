@@ -22,3 +22,5 @@ vim.api.nvim_set_keymap('n', '<leader>m', ':lua require("nvim-window").pick()<CR
 -- k.set('n', ',', '<cmd>WhichKey<cr>', {noremap = true, silent = true})
 
 k.set('n', '<leader>z', ':Lazy<cr>', { noremap = true, silent = true })
+
+k.set('n', '<leader>f', ':%g/', { noremap = true, silent = true })
