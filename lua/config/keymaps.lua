@@ -17,7 +17,7 @@ k.set('n', ';', ':', { noremap = true })
 
 k.set('n', '<leader>t', ':ToggleTerm<CR>', { noremap = true })
 
-vim.api.nvim_set_keymap('n', '<leader>m', ':lua require("nvim-window").pick()<CR>', { silent = true })
+vim.api.nvim_set_keymap('n', '<leader>a', ':lua require("nvim-window").pick()<CR>', { silent = true })
 
 -- k.set('n', ',', '<cmd>WhichKey<cr>', {noremap = true, silent = true})
 

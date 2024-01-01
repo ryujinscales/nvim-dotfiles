@@ -35,3 +35,5 @@ vim.diagnostic.config {
 }
 
 -- vim.cmd([[set nocursorline]]) -- Not working
+
+vim.cmd([[set noshowmode]])
