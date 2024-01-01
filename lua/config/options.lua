@@ -16,15 +16,16 @@ opt.clipboard:append('unnamedplus')
 opt.termguicolors = true
 -- opt.noswapfile = true
 opt.undofile = true
-opt.cursorline = true
+-- opt.cursorline = true
 opt.scrolloff = 3
 opt.tabstop = 4
 opt.softtabstop = 4
 opt.shiftwidth = 4
-opt.colorcolumn = "80"
+-- opt.colorcolumn = "80"
 
 vim.cmd([[highlight Comment cterm=italic gui=italic]])
 vim.cmd([[set fillchars=fold:\ ,vert:\│,eob:\ ,msgsep:‾]])
+vim.cmd([[set signcolumn=yes:2]])
 
 vim.diagnostic.config {
   virtual_text = {
@@ -32,3 +33,5 @@ vim.diagnostic.config {
   },
   signs = true,
 }
+
+-- vim.cmd([[set nocursorline]]) -- Not working

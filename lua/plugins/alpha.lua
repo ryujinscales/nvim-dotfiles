@@ -34,7 +34,7 @@ return {
                 -- '███   ███   ███    ███ ███    ███ ███    ███ ███  ███   ███   ███ ',
                 -- '▀█   █▀    ██████████  ▀██████▀   ▀██████▀  █▀    ▀█   ███   █▀   ',
                 -- '',
-        
+
                 -- '',
                 -- '                     o$$$$$$                                ',
                 -- '                 ooo$$$$$$$$"oo                             ',
@@ -103,7 +103,7 @@ return {
                 ' ⢀⣀⠀⣠⣀⡠⠞⣿⣿⣿⣿⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣴⣿⣷⣦⣄⣀⢿⡽⢻⣦ ',
                 ' ⠻⠶⠾⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠋ ',
                 '',
-        
+
                 -- '',
                 -- ' ⠀⠀⠀⠀⢀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠤⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀',⠀
                 -- ' ⠀⠀⠀⢀⢊⠀⢰⠁⠀⠀⠀⠀⢀⠤⢂⠔⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⣡⠀⠀⠀⠀⠀⠀⠀⠀⠹⠢⡀⠀⠀⠀⡀⠀⠆⠀⠀⠀',⠀
@@ -131,17 +131,17 @@ return {
                 -- '',
         }
         dashboard.section.buttons.val = {
-            dashboard.button( "<leader> e e", "  󰁔 New file" , ":ene <BAR> startinsert <CR>"),
+            dashboard.button( "N", "  󰁔 New file" , ":ene <BAR> startinsert <CR>"),
             -- dashboard.button( "<leader> e v", "  󰁔 Settings" , ":e $MYVIMRC <CR>"),
-            dashboard.button( "<leader> e v", "  󰁔 Settings" , ":e C:\\Users\\aniru\\AppData\\Local\\nvim\\<CR>"),
-            dashboard.button( "<leader> q q", "󰗼  󰁔 Quit NVIM", ":qa <CR>"),
-            dashboard.button( "<leader> l g", "  󰁔 Telescope Live Grep", ":Telescope live_grep <CR>"),
+            dashboard.button( "V", "  󰁔 Settings" , ":e C:\\Users\\aniru\\AppData\\Local\\nvim\\<CR>"),
+            dashboard.button( "I", "󰗼  󰁔 Quit NVIM", ":qa <CR>"),
+            dashboard.button( "M", "  󰁔 Telescope Live Grep", ":Telescope live_grep <CR>"),
         }
         -- dashboard.section.footer.val = {
         --   "",
         --   " 󱐋 Come on chad, you can do it! 󱐋",
         -- }
-        
+
         alpha.setup(dashboard.opts)
     end
 }

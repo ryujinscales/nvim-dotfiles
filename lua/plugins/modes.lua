@@ -11,7 +11,7 @@ return {
 				visual = "#9745be",
 			},
 		  line_opacity = 0.25,
-		  set_cursorline = true,
+		  -- set_cursorline = true,
 		  set_cursor = true
 		})
 	end
