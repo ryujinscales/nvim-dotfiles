@@ -24,3 +24,7 @@ vim.api.nvim_set_keymap('n', '<leader>a', ':lua require("nvim-window").pick()<CR
 k.set('n', '<leader>z', ':Lazy<cr>', { noremap = true, silent = true })
 
 k.set('n', '<leader>f', ':%g/\\v', { noremap = true, silent = true })
+
+k.set('n', '<leader>j', '<cmd>:lua require("harpoon.mark").add_file()<CR>', { noremap = true, silent = true })
+
+k.set('n', '<leader><leader>', '<cmd>Telescope harpoon marks<CR>', { noremap = true, silent = true })
