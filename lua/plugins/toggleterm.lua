@@ -1,10 +1,10 @@
 return {
   'akinsho/toggleterm.nvim',
   lazy = false,
-  version = "*",
+  version = '*',
   config = function()
-    require('toggleterm').setup{
-      shell = "powershell",
+    require('toggleterm').setup {
+      shell = 'powershell',
       direction = 'vertical',
       -- direction = 'float',
       size = 36,

@@ -5,13 +5,14 @@ return {
     require('lualine').setup {
       options = {
         icons_enabled = true,
-        theme = 'auto',
+        theme = 'ayu_dark',
         component_separators = { left = '', right = '' },
         section_separators = { left = '', right = '' },
         disabled_filetypes = {
           statusline = {},
           winbar = {},
-          "alpha",
+          'alpha',
+          'toggleterm',
         },
         ignore_focus = {},
         always_divide_middle = true,
@@ -86,13 +87,14 @@ return {
         -- Disable sections and component separators
         component_separators = '',
         section_separators = '',
-        theme = {
-          -- We are going to use lualine_c an lualine_x as left and
-          -- right section. Both are highlighted by c theme .  So we
-          -- are just setting default looks o statusline
-          normal = { c = { fg = colors.fg, bg = colors.bg } },
-          inactive = { c = { fg = colors.fg, bg = colors.bg } },
-        },
+        -- theme = {
+        --   -- We are going to use lualine_c an lualine_x as left and
+        --   -- right section. Both are highlighted by c theme .  So we
+        --   -- are just setting default looks o statusline
+        --   normal = { c = { fg = colors.fg, bg = colors.bg } },
+        --   inactive = { c = { fg = colors.fg, bg = colors.bg } },
+        -- },
+        -- Commented out the above as themes were not changing
       },
       sections = {
         -- these are to remove the defaults
@@ -207,8 +209,9 @@ return {
 
     ins_left {
       function()
-        local msg = vim.api.nvim_call_function("codeium#GetStatusString", {})
-        return msg
+        local prefix = 'Codeium:'
+        local msg = vim.api.nvim_call_function('codeium#GetStatusString', {})
+        return prefix .. msg
       end,
       color = { gui = 'bold' },
     }
@@ -248,30 +251,34 @@ return {
     -- }
 
     -- Add components to right sections
-    ins_right {
-      'o:encoding',       -- option component same as &encoding in viml
-      fmt = string.upper, -- I'm not sure why it's upper case either ;)
-      cond = conditions.hide_in_width,
-      -- color = { fg = colors.green, gui = 'bold' },
-      color = { fg = colors.gray, gui = 'bold' },
-    }
+    -- ins_right {
+    --   'o:encoding',       -- option component same as &encoding in viml
+    --   fmt = string.upper, -- I'm not sure why it's upper case either ;)
+    --   cond = conditions.hide_in_width,
+    --   -- color = { fg = colors.green, gui = 'bold' },
+    --   color = { fg = colors.gray, gui = 'bold' },
+    -- }
+
+    -- ins_right {
+    --   'fileformat',
+    --   fmt = string.upper,
+    --   icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
+    --   -- color = { fg = colors.green, gui = 'bold' },
+    --   color = { fg = colors.gray, gui = 'bold' },
+    -- }
+
+    -- ins_right {
+    --   -- filesize component
+    --   'filesize',
+    --   cond = conditions.buffer_not_empty,
+    --   color = { fg = colors.gray, gui = 'bold' },
+    -- }
 
     ins_right {
-      'fileformat',
-      fmt = string.upper,
-      icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
-      -- color = { fg = colors.green, gui = 'bold' },
+      -- 'progress',
+      'progress',
       color = { fg = colors.gray, gui = 'bold' },
     }
-
-    ins_right {
-      -- filesize component
-      'filesize',
-      cond = conditions.buffer_not_empty,
-      color = { fg = colors.gray, gui = 'bold' },
-    }
-
-    ins_right { 'progress', color = { fg = colors.gray, gui = 'bold' }, }
 
     ins_right {
       'diff',

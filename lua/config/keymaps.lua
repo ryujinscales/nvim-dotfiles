@@ -22,6 +22,11 @@ k.set('n', '<leader>d', '<cmd>bdelete<cr>', { noremap = true, silent = true })
 k.set('n', ';', ':', { noremap = true })
 
 k.set('n', '<leader>f', ':%g/\\v', { noremap = true, silent = true })
+
+vim.keymap.set('n', '<A-=>', [[<cmd>horizontal resize +2<cr>]]) -- make the window biger vertically
+vim.keymap.set('n', '<A-->', [[<cmd>horizontal resize -2<cr>]]) -- make the window smaller vertically
+vim.keymap.set('n', '<A-9>', [[<cmd>vertical resize +5<cr>]])   -- make the window bigger horizontally by pressing shift and =
+vim.keymap.set('n', '<A-0>', [[<cmd>vertical resize -5<cr>]])   -- make the window smaller horizontally by pressing shift and -
 -- ===============================================================
 -- Plugins
 

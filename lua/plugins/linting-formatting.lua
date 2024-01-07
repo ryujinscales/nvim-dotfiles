@@ -38,12 +38,11 @@ return {
                 c = { 'cppcheck' },
                 cpp = { 'cppcheck' },
             }
-            vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+            vim.api.nvim_create_autocmd({ 'BufWritePost' }, {
                 callback = function()
-                    require("lint").try_lint()
+                    require('lint').try_lint()
                 end,
             })
         end
     }
 }
-

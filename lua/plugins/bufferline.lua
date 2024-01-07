@@ -4,14 +4,14 @@ return {
     dependencies = 'nvim-tree/nvim-web-devicons',
     lazy = false,
     config = function()
-        require("bufferline").setup{
+        require("bufferline").setup {
             options = {
                 -- show_buffer_close_icons = false,
                 offsets = {
                     {
-                        filetype = "NvimTree",
-                        text = "File Explorer",
-                        highlight = "Directory",
+                        filetype = 'NvimTree',
+                        text = 'File Explorer',
+                        highlight = 'Directory',
                         separator = true,
                     },
                 },
