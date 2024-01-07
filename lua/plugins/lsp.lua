@@ -2,13 +2,13 @@ return {
   {
     'neovim/nvim-lspconfig',
     lazy = false,
-    priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    priority = 999,
     -- event = 'VeryLazy',
   },
   {
     'williamboman/mason.nvim',
     lazy = false,
-    priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    priority = 999,
     -- event = 'VeryLazy',
     config = function()
       require('mason').setup()
@@ -17,7 +17,7 @@ return {
   {
     'williamboman/mason-lspconfig.nvim',
     lazy = false,
-    priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    priority = 999,
     -- event = 'VeryLazy',
     config = function()
       local servers = {
@@ -77,7 +77,7 @@ return {
   {
     'hrsh7th/nvim-cmp',
     lazy = false,
-    priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    priority = 999,
     -- event = 'VeryLazy',
     config = function()
       local cmp = require 'cmp'
@@ -136,25 +136,25 @@ return {
   {
     'L3MON4D3/LuaSnip',
     lazy = false,
-    priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    priority = 999,
     -- event = 'VeryLazy',
   },
   {
     'saadparwaiz1/cmp_luasnip',
     lazy = false,
-    priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    priority = 999,
     -- event = 'VeryLazy',
   },
   {
     'hrsh7th/cmp-nvim-lsp',
     lazy = false,
-    priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    priority = 999,
     -- event = 'VeryLazy',
   },
   {
     'hrsh7th/cmp-path',
     lazy = false,
-    priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    priority = 999,
     -- event = 'VeryLazy',
   },
   -- {
@@ -165,8 +165,7 @@ return {
   {
     'onsails/lspkind.nvim',
     lazy = false,
-    priority = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    priority = 999,
     -- event = 'VeryLazy',
   },
 }
-
